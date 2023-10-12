@@ -35,8 +35,8 @@ def correlation_function():
     subset = df[cols_to_read]
     correlation = subset.corr()
     print(f'the correlation value between {cols_to_read[0]} '
-          f'and {cols_to_read[1]} is \n{correlation}')
-    sns.heatmap(correlation, cmap='coolwarm', annot=True)
+          f'and {cols_to_read[1]} for {csv} is \n{correlation}')
+    sns.heatmap(correlation, cmap='vlag', annot=True)
     plt.show()
 
 
